@@ -69,3 +69,49 @@ int test()
 //add code here if any test needed
 }
 
+int main()
+{
+  //struct rect screen;
+  //give a defination of a rect, which demonstrate a computer's screen
+  //this should give the middle point of this defined screen
+  struct point middle;
+  //didn't know should make a declaration here before using, should remember
+  struct point makePoint(int,int);
+  struct point addPoint(struct point, struct rect);
+  int ptinrect(struct point, struct rect);
+  
+  //test a pointer to a struct
+  struct rect screen, *rp=&screen;
+  
+  struct point p1 = makePoint(23,33);
+  struct point p2 = makePoint(222,345);
+  screen.pt1 = p1;
+  screen.pt2 = p2;
+  middle = makePoint((screen.pt1.x+screen.pt2.x)/2,(screen.pt1.y+screen.pt2.y)/2);
+  
+  //these four expressions are equivalent,they are just different types of expression
+  //all of them should be remembered and know how they works
+  //here uses printf to put them on screen to verify.
+ printf("floolowing should be the same,\nscreen.pt1.x = : %d",screen.pt1.x);
+ printf("\nrp->pt1.x = : %d",rp->pt1.x);
+ printf("\n(screen.pt1).x :%d", (screen.pt1).x);
+ printf("\n(rp->pt1).x = : %d", (rp->pt1).x); //at first, I write (screen->pt1).x, so this is not correct
+ 
+ //the structure operators . and -> together with () for function calls and [] for subscript are at the top
+ //of the precedence hierarchy, and thus bind very tightly, for example:
+ struct {
+   int len;
+   cahr *str;
+ } *p;
+ 
+ p->len = 871;
+ p->str = "there is another bus named 650, which can drive many people mad!";
+ /**then the expression
+  ++p->len; increse len, not p
+  and the expression
+  *p->str; fetches whatever str points to;
+  * here's the test:
+ */
+ printf("\n the expression ++p->len=%d",++p->len);
+ printf("\ the expression *p->str=%s",*p->str);
+}
