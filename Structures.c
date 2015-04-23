@@ -113,5 +113,5 @@ int main()
   * here's the test:
  */
  printf("\n the expression ++p->len=%d",++p->len);
- printf("\ the expression *p->str=%s",*p->str);
+ printf("\n the expression *p->str=%s",*p->str);
 }
