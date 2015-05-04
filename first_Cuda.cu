@@ -5,6 +5,7 @@
   5   james leng
   6   lengjiabing
   7   2015.4.25
+	test if make change can successfully updated
   8  */
   9 #include<stdio.h>
  10 #include<stdlib.h>
