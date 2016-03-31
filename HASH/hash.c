@@ -18,7 +18,14 @@ Index Hash(const char *Key, int TableSize)
     while( *Key != '\0' )
         HashVal += *Key ++;
 
-    return HashVal % TableSize
+    return HashVal % TableSize;
 }
 
 
+//testing main function.
+int main()
+{
+
+    Index testHashIndex = Hash("testing", 128);
+    printf("hash key value is :%d", testHashIndex);
+}
