@@ -26,3 +26,18 @@ ElementType Retrieve( Position P );
 
 #endif /* _HashSep_H */
 
+
+struct ListNode
+{
+    ElementType Element;
+    Position Next;
+};
+
+
+typedef Position List;
+
+struct HashTbl
+{
+    int TableSize;
+    List *TheLists;
+}
