@@ -21,5 +21,6 @@ InsertionSort( ElementType A[  ], int N )
         {
             A[ j ] = A[ j - 1 ];
         }
+        A[ j ] = Temp;
     }
 }
