@@ -1,0 +1,18 @@
+This is a scheduling task file for the learning of Data Structure text book in C
+There are 12 chapters, and planed to finish it in 30 days.
+Almost three days per chapter.
+
+If one chapter finished, add a √ mark after it.
+
+Schedule List:
+    chapter              plan days   status
+    List/Stack/Quene     4
+    Trees                4
+    Hash                 2
+    Heap                 3
+    Ordering             4
+    Graph                5
+    Algorithm            4
+
+
+
